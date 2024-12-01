@@ -24,22 +24,20 @@ const educationData = [
 
 const Education = () => {
   return (
-    <div className="my-12 px-6 py-8 bg-gray-100 rounded-lg shadow-md">
-      <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">Education</h2>
+    <div className="my-12 px-6 py-8 rounded-lg shadow-md">
       <ul className="space-y-6">
         {educationData.map((education, index) => (
           <li
             key={index}
-            className="p-6 bg-white rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-300 flex items-start space-x-4"
+            className="p-6  rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-300 flex items-start space-x-4"
           >
-            <i className="fas fa-graduation-cap text-blue-600 text-3xl"></i>
+            <i className="fas fa-graduation-cap text-orange-600 text-3xl"></i>
             <div>
-              <h3 className="text-xl font-semibold text-blue-600">{education.degree}</h3>
-              <p className="text-gray-700 font-medium">{education.institution}</p>
-              <p className="text-sm text-gray-500">
+              <h3 className="text-xl font-semibold text-orange-600 ">{education.degree}</h3>
+              <p className="text-white font-medium">{education.institution}</p>
+              <p className="text-sm text-white">
                 {education.startDate} - {education.endDate}
               </p>
-              <p className="mt-2 text-gray-600">{education.description}</p>
             </div>
           </li>
         ))}

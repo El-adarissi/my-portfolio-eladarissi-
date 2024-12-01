@@ -1,5 +1,5 @@
 
-import { ButtonPrimary,ButtonOutline } from "./Button";
+import { ButtonPrimary} from "./Button";
 const Hero =()=>{
 
     return <>
@@ -42,12 +42,6 @@ const Hero =()=>{
                  label="Download CV"
                  icon="download"
                  href="/EL-ADARISSI_ABDELAZIZ_Cv.pdf"
-                />
-
-                <ButtonOutline
-                 href="#about"
-                 label="Scroll down"
-                 icon="arrow_downward"
                 />
             </div>   
         </div>
